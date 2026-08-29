@@ -20,3 +20,6 @@ Thumbs.db
 node_modules/
 dist/
 build/
+
+# Uploaded documents
+backend/storage/

@@ -55,12 +55,24 @@ This project is being built as a production-oriented AI application to explore a
 
 ```text
 ai-document-intelligence/
-├── backend/          # FastAPI backend
-├── frontend/         # React frontend
-├── docs/             # Architecture and technical documentation
-├── infrastructure/   # Docker and cloud infrastructure
-├── .env.example      # Environment variable template
+├── backend/
+│   ├── alembic/          # Database migrations
+│   ├── app/
+│   │   ├── api/          # API endpoints
+│   │   ├── core/         # Configuration and database
+│   │   ├── models/       # SQLAlchemy models
+│   │   ├── schemas/      # API schemas
+│   │   ├── services/     # Business services
+│   │   └── rag/          # RAG pipeline
+│   ├── storage/          # Local uploaded documents (not committed)
+│   └── requirements.txt
+│
+├── frontend/             # React application
+├── docs/                 # Architecture and technical documentation
+├── infrastructure/       # Docker and cloud infrastructure
+├── .env.example          # Environment variable template
 ├── docker-compose.yml
+├── .gitignore
 └── README.md
 ```
 
@@ -69,19 +81,25 @@ ai-document-intelligence/
 * [x] Project repository created
 * [x] Initial project structure
 * [x] FastAPI backend initialized
-* [ ] Database setup
-* [ ] Document upload
-* [ ] Document processing
+* [x] PostgreSQL + pgvector setup
+* [x] SQLAlchemy database integration
+* [x] Alembic database migrations
+* [x] Document and document chunk database models
+* [x] PDF document upload
+* [x] Local document storage
+* [ ] PDF text extraction
+* [ ] Document text chunking
 * [ ] Embedding generation
 * [ ] Vector search
 * [ ] RAG pipeline
 * [ ] LLM integration
+* [ ] Automated testing
 * [ ] React frontend
 * [ ] Authentication
 * [ ] Docker deployment
 * [ ] Azure deployment
 * [ ] CI/CD
-* [ ] Automated testing
+
 
 ## 👨‍💻 Author
 
