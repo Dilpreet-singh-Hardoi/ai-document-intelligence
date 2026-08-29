@@ -85,6 +85,6 @@ ai-document-intelligence/
 
 ## 👨‍💻 Author
 
-**Dilpreet Singh**
+**Dilpreet Singh Hardoi**
 
 Full Stack & AI Developer
