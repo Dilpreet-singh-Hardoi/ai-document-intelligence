@@ -20,7 +20,7 @@ This project is being built as a production-oriented AI application to explore a
 * Deploy the application to Azure
 * Implement automated testing and CI/CD
 
-## 🏗️ Planned Technology Stack
+## 🏗️ Technology Stack
 
 ### Frontend
 
@@ -31,6 +31,8 @@ This project is being built as a production-oriented AI application to explore a
 
 * Python
 * FastAPI
+* SQLAlchemy
+* Alembic
 
 ### AI
 
@@ -38,7 +40,13 @@ This project is being built as a production-oriented AI application to explore a
 * Embeddings
 * Retrieval-Augmented Generation (RAG)
 * Vector Search
-* LangChain / LangGraph
+* LangChain / LangGraph *(planned)*
+
+### Document Processing
+
+* PyMuPDF
+* PDF text extraction
+* Configurable text chunking
 
 ### Database
 
@@ -48,8 +56,9 @@ This project is being built as a production-oriented AI application to explore a
 ### DevOps & Cloud
 
 * Docker
-* GitHub Actions
-* Microsoft Azure
+* Docker Compose
+* GitHub Actions *(planned)*
+* Microsoft Azure *(planned)*
 
 ## 📁 Project Structure
 
@@ -76,6 +85,40 @@ ai-document-intelligence/
 └── README.md
 ```
 
+## 🔄 Document Processing Pipeline
+
+The current document processing pipeline is:
+
+```text
+PDF Upload
+    ↓
+Local Document Storage
+    ↓
+PDF Text Extraction
+    ↓
+Text Chunking
+    ↓
+Document Chunks
+```
+
+The planned pipeline will continue with:
+
+```text
+Document Chunks
+    ↓
+Embedding Generation
+    ↓
+Vector Storage (pgvector)
+    ↓
+Semantic Search
+    ↓
+RAG Context
+    ↓
+LLM Response
+    ↓
+Source Citations
+```
+
 ## 🚀 Current Progress
 
 * [x] Project repository created
@@ -87,19 +130,19 @@ ai-document-intelligence/
 * [x] Document and document chunk database models
 * [x] PDF document upload
 * [x] Local document storage
-* [x] PDF text extraction
-* [ ] Document text chunking
+* [x] PDF text extraction with PyMuPDF
+* [x] Document text chunking
 * [ ] Embedding generation
 * [ ] Vector search
 * [ ] RAG pipeline
 * [ ] LLM integration
+* [ ] Source citations
 * [ ] Automated testing
 * [ ] React frontend
 * [ ] Authentication
 * [ ] Docker deployment
 * [ ] Azure deployment
 * [ ] CI/CD
-
 
 ## 👨‍💻 Author
 
