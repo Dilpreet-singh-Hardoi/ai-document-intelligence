@@ -87,7 +87,7 @@ ai-document-intelligence/
 * [x] Document and document chunk database models
 * [x] PDF document upload
 * [x] Local document storage
-* [ ] PDF text extraction
+* [x] PDF text extraction
 * [ ] Document text chunking
 * [ ] Embedding generation
 * [ ] Vector search
